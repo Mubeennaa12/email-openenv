@@ -1,3 +1,12 @@
+---
+title: Email OpenEnv
+emoji: 📧
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # Email Assistant OpenEnv
 
 ## Overview
@@ -8,14 +17,12 @@ This environment simulates real-world email handling tasks for AI agents.
 2. Email Categorization (Medium)
 3. Priority + Reply Generation (Hard)
 
-## Action Space
-JSON outputs depending on task
+## Running
 
-## Observation Space
-List of email strings
+The environment runs using Docker and executes `inference.py` which evaluates the agent on the defined tasks.
 
-## Setup
+## Baseline Results
 
-```bash
-pip install -r requirements.txt
-python inference.py
+Task 1 Score: 1.0  
+Task 2 Score: 1.0  
+Task 3 Score: 0.75
